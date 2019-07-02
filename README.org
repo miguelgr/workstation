@@ -7,65 +7,70 @@
 - Workstation: https://getfedora.org/en/workstation/download/
 - Etcher: https://www.balena.io/etcher/
 
-** First boot
+** Languages
 
-*** Languages
+~sudo dnf install -y nodejs clojure python2-devel python3-devel golang~
 
-sudo dnf install -y nodejs clojure python2-devel python3-devel golang
+** Tools
 
-*** Tools
+~sudo dnf install -y emacs fzf zsh tilix gnome-tweaks the_silver_searcher keepass utils-linux-utilities~
 
-sudo dnf install -y emacs fzf zsh tilix gnome-tweaks the_silver_searcher keepass utils-linux-utilities
-
+#+BEGIN_SRC
 pip install virtualenv --user
 python3 -m venv ~/.virtualenvs/py3
 source ~/.virtualenvs/py3/bin/activate
+#+END_SRC
 
-*** GNOME Tweaks
+** GNOME Tweaks
 
 Caps lock as ctrl, startup apps, scaling 1.2
 
-*** Editor
+** Editor
 
-git clone https://github.com/miguelgr/emacsd ~/.emacs.d
+~git clone https://github.com/miguelgr/emacsd ~/.emacs.d~
 
-*** Terminal (zsh, ohmyzsh)
+** Terminal (zsh, ohmyzsh)
 
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+~sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"~
 
-sudo chsh -s /bin/zshr <username>
+~sudo chsh -s /bin/zshr <username>~
 
 Tilix -> Profile -> command (mark) run command as a login shell
 
-*** Browser (Firefox)
+** Browser (Firefox)
 
 https://addons.mozilla.org/es/firefox/addon/multi-account-containers/
 https://addons.mozilla.org/es/firefox/addon/ublock-origin/
 https://github.com/gsomoza/firefox-easy-container-shortcuts
 
-*** Work Tools
+** Work Tools
 
 **** Docker
 
+#+BEGIN_SRC
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 sudo dnf install docker-ce
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 sudo dnf install docker-compose
+#+END_SRC
 
 **** Heroku CLI
-sudo curl https://cli-assets.heroku.com/install.sh | sh
+
+~sudo curl https://cli-assets.heroku.com/install.sh | sh~
 
 **** Zoom VideoMeetings
 
 Download: https://zoom.us/support/download
 
-*** Messaging
+** Messaging
 
 https://desktop.telegram.org/
 
-*** Music
+** Music
 
+#+BEGIN_SRC
 sudo dnf install mpv cmus youtube-dl
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install -y flathub com.spotify.Client
+#+END_SRC
