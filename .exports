@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+
+home_bin="$HOME/.bin"
+
+if [ ! -d $home_bin ]; then
+    mkdir $home_bin
+fi
+
+export PATH=$home_bin:$PATH
+
+export EDITOR="emacs -nw -Q"
