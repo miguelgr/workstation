@@ -31,17 +31,23 @@ Caps lock as ctrl, startup apps, scaling 1.2
 
 ** Terminal (zsh, ohmyzsh)
 
-~sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"~
+ZSH and OhMyZsh
 
-~sudo chsh -s /bin/zshr <username>~
+#+BEGIN_SRC
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+sudo chsh -s /bin/zshr <username>
+#+END_SRC
 
 Tilix -> Profile -> command (mark) run command as a login shell
 
 ** Browser (Firefox)
 
-https://addons.mozilla.org/es/firefox/addon/multi-account-containers/
-https://addons.mozilla.org/es/firefox/addon/ublock-origin/
-https://github.com/gsomoza/firefox-easy-container-shortcuts
+- https://addons.mozilla.org/es/firefox/addon/multi-account-containers/
+
+- https://addons.mozilla.org/es/firefox/addon/ublock-origin/
+
+- https://github.com/gsomoza/firefox-easy-container-shortcuts
 
 ** Work Tools
 
