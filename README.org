@@ -15,7 +15,7 @@
 
 ~sudo dnf install -y emacs fzf zsh tilix gnome-tweaks the_silver_searcher keepass utils-linux-utilities~
 
-#+BEGIN_SRC
+#+BEGIN_SRC bash
 pip install virtualenv --user
 python3 -m venv ~/.virtualenvs/py3
 source ~/.virtualenvs/py3/bin/activate
@@ -33,7 +33,7 @@ Caps lock as ctrl, startup apps, scaling 1.2
 
 ZSH and OhMyZsh
 
-#+BEGIN_SRC
+#+BEGIN_SRC bash
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 sudo chsh -s /bin/zshr <username>
@@ -49,11 +49,21 @@ Tilix -> Profile -> command (mark) run command as a login shell
 
 - https://github.com/gsomoza/firefox-easy-container-shortcuts
 
-** Work Tools
+If using a dark theme for GNOME:
 
+`~/.mozilla/firefox/<profile>/chrome/userContent.css`
+
+#+BEGIN_SRC css
+input, textarea {
+   color:#555 !important;
+   background-color:#fff !important;
+}
+#+END_SRC
+
+** Work Tools
 **** Docker
 
-#+BEGIN_SRC
+#+BEGIN_SRC bash
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 sudo dnf install docker-ce
 sudo systemctl enable docker.service
@@ -75,7 +85,7 @@ https://desktop.telegram.org/
 
 ** Music
 
-#+BEGIN_SRC
+#+BEGIN_SRC bash
 sudo dnf install mpv cmus youtube-dl
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install -y flathub com.spotify.Client

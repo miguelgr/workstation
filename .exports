@@ -10,3 +10,5 @@ fi
 export PATH=$home_bin:$PATH
 
 export EDITOR="emacs -nw -Q"
+
+source /usr/share/fzf/shell/key-bindings.zsh
