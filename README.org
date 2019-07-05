@@ -13,7 +13,7 @@
 
 ** Tools
 
-~sudo dnf install -y emacs fzf zsh tilix gnome-tweaks the_silver_searcher keepass utils-linux-utilities~
+~sudo dnf install -y emacs fzf zsh tilix gnome-tweaks the_silver_searcher keepass utils-linux-utilities http~
 
 #+BEGIN_SRC bash
 pip install virtualenv --user
