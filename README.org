@@ -60,6 +60,14 @@ input, textarea {
 }
 #+END_SRC
 
+*** Cycling browser tabs
+
+(1) In a new tab, type or paste about:config in the address bar and press Enter. Click the button promising to be careful.
+
+(2) In the filter box, type or paste ctrl and pause while the list is filtered
+
+(3) Double-click browser.ctrlTab.previews to set its value to true. 
+
 ** Work Tools
 **** Docker
 
