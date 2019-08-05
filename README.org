@@ -85,7 +85,10 @@ sudo dnf install docker-compose
 
 **** Zoom VideoMeetings
 
-Download: https://zoom.us/support/download
+#+BEGIN_SRC bash
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo flatpak install -y flathub us.zoom.Zoom
+#+END_SRC
 
 ** Messaging
 
