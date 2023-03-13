@@ -1,6 +1,7 @@
 [user]
     name = Miguel Garcia Rodriguez
-    email = miguel.garciarod@gmail.com
+    email = miguelgr@fastmail.com
+    signingkey = 6E0E1149496ABA2336D7CC791F2A61AF20A06E89
 [color]
     ui = auto
 [color "branch"]
@@ -35,4 +36,6 @@
 [fetch]
     prune = true
 [github]
-user = miguelgr
+    user = miguelgr
+[commit]
+    gpgsign = true
